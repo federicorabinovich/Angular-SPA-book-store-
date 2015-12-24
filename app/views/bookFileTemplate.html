@@ -1,0 +1,12 @@
+<a href="#/detail/{{::book.name}}">
+	<div class="jumbotron move">
+		<img class="cover" ng-src="{{::book.cover}}">
+		<div class="book-title-container">
+			<h3>{{::book.name}}</h3>
+			<h5>By {{::book.author.name}}</h5>
+		</div>
+		<h4 class="glyphicon glyphicon-heart-empty"></h4>
+		<h4>{{::book.likes}}</h4>
+		<h4 class="al-right">{{::book.published | relativeDate}}</h4>
+	</div>
+</a>

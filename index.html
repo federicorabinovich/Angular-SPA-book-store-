@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app='app'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reedsy | Releases</title>
+	<link href="app/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="app/assets/css/animate.css" rel="stylesheet">
+	<link href="app/assets/css/custom-style.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<nav class="navbar">
+	  <div class="container">
+		<a href="#/" class="reedsy"><img src="app/assets/img/logo.png">reedsy</a>
+		<a href="">About</a>
+		<a href="">Blog</a>
+		<a href="">Writing</a>
+		<a href="">Survey</a>
+	  </div>
+	</nav>
+	<div class="container" ng-view></div>
+
+
+		<!------------- Libraries ---------->
+
+		<script type="text/javascript" src="app/libraries/angular.min.js"></script>
+		<script type="text/javascript" src="app/libraries/angular-route.min.js"></script>
+		<script type="text/javascript" src="app/libraries/angular-animate.js"></script>
+		<script type="text/javascript" src="app/libraries/script.js"></script>
+
+		
+		
+		
+		
+
+		<!------------- Modules ---------->
+		
+		<script type="text/javascript" src="app/app.js"></script>
+		<script type="text/javascript" src="app/lazy.js"></script>
+
+		<!------------- Filters ---------->
+
+		<script type="text/javascript" src="app/filters/relativeDate.js"></script>
+
+
+		<!------------- Services ---------->
+		<script type="text/javascript" src="app/services/FetchJson.js"></script>
+
+		<!------------- Directives ---------->
+
+		<script type="text/javascript" src="app/directives/bookFile.js"></script>
+
+
+
+</body>
+</html>

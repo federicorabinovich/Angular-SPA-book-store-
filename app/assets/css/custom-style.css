@@ -1,0 +1,127 @@
+/*some lightweight adjustments to bootstrap*/
+body{
+	background-image:URL('../img/background.jpg');
+	background-repeat:no-repeat;
+	background-position: center top;
+	color: #2A2A2A;
+	font-family: "Lato",Myriad Pro,sans-serif;
+	background-color: #A2C428;
+}
+
+@font-face {
+    font-family: aleo;
+    src: url(../fonts/aleo-regular-webfont.woff);
+}
+.navbar{
+	background-color: transparent;
+	border-bottom: 0;
+	padding-top:20px;
+}
+.navbar a{
+	color: #2A2A2A;
+	font-size: 18px;
+	margin-right:30px;
+	padding-bottom:12px;
+}
+.navbar a:hover{
+	border-bottom:2px solid #AACF39;
+	text-decoration: none;
+}
+.navbar .reedsy {
+    color: #2A2A2A;
+    font-family: "aleo",sans-serif;
+    font-size: 35px;
+    margin: 0px 30px 0px 0px;
+}
+.navbar .reedsy:hover {
+    border:none;
+}
+.navbar .reedsy img{
+	height: 35px;
+	margin-right:5px;
+}
+select{
+	margin-right:20px;
+}
+
+.form-control:focus{   
+    border-color: #AACF39;
+    box-shadow: 0 0px 5px #AACF39;
+    outline: 0 none;
+}
+.separator50{
+	margin-top:50px;
+	width:100%;
+	height:0px;
+	float:none;
+	clear:both;
+	display:block;
+}
+.jumbotron{
+	border:1px solid #2a2a2a;
+	padding: 10px !important;
+}
+.jumbotron .cover{
+	width:100%;
+	height:auto;
+	margin:0;
+	display:block;
+}
+.jumbotron h5{
+	margin-bottom:20px;
+}
+.jumbotron h4{
+	display:inline;
+	margin:0px 10px 0 0;
+}
+.jumbotron .book-title-container{
+	display:block;
+	height: 150px;
+	overflow:hidden;
+}
+.jumbotron p{
+	font-size:14px;
+	float:left;
+	text-align:justify;
+}
+
+.jumbotron .cover-small{
+	width:20%;
+	float:right;
+	margin:0 0 10px 20px;
+	border:1px solid #2a2a2a;
+	border-radius: 3px;
+}
+.jumbotron .written-by{
+	margin:0 auto;
+	width:300px;
+}
+.jumbotron .written-by .frame{
+	width:296px;
+	height:296px;
+	border-radius: 148px;
+	border:2px solid #2a2a2a;
+	overflow:hidden;
+}
+a, a:hover{
+	text-decoration:none;
+}
+.al-right{
+	float:right;
+}
+.btn_container{
+	display:block;
+	width:50%;
+	margin:10px auto 50px;
+}
+
+.move {
+  transition: all 0.25s ease-in-out;
+}
+.move:hover {
+  transition: all .55s ease-in-out;
+  transform: translateY(-30px);
+}
+.al-center{
+	text-align:center;
+}

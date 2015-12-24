@@ -1,0 +1,29 @@
+<div class="jumbotron">
+	<h2 class="animated bounce">{{::book.name}}</h2>
+	<h3>By {{::book.author.name}}</h3>
+	<p><img class="cover-small" ng-src="{{::book.cover}}"><span  ng-repeat="cont in book.introduction">{{::cont.content}}</br></span></p>
+	<div class="separator50"></div>
+	<div class="written-by">
+		<h3>Written by {{::book.author.name}}</h3>
+		<div class="frame">
+			<img class="cover" ng-src="{{::book.author.avatar}}">
+		</div>
+	</div>
+	<div class="separator50"></div>
+	<h4 class="glyphicon glyphicon-heart-empty"></h4>
+	<h4>{{::book.likes}} people liked this book</h4>
+	<h4 class="al-right">{{::book.published | relativeDate}}</h4>
+	<h3>Category {{::book.genre.category}} | Genre: {{::book.genre.name}}</h3>
+	<div class="separator50"></div>
+</div>
+
+<h2 class="al-center">Similar readings</h2>
+<h3 class="al-center">if you liked this book, we recommend you check out these emerging titles.</h3>
+
+<div class="container-fluid">
+  <div class="row">
+		<div class="col-md-4" ng-repeat="book in related(3)">
+			<book-file></book-file>
+		</div>
+	</div>
+</div>
